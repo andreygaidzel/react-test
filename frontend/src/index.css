@@ -9,8 +9,7 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: #2c333f;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -31,11 +30,11 @@
   --color-primary-100: #fcf3e1;
   --color-primary-200: #fceccd;
   --color-primary-300: #fae1af;
-  --color-primary-400: #fbd997;
+  --color-primary-400: #c5d0de;
   --color-primary-500: #ffd37c;
   --color-primary-600: #f9c762;
   --color-primary-700: #fbc14d;
-  --color-primary-800: #fab833;
+  --color-primary-800: #fff;
   --color-primary-900: #f6ad1b;
 }
 
@@ -47,4 +46,8 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+#root {
+  height: 100vh;
 }

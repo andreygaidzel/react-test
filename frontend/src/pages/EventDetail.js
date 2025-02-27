@@ -7,8 +7,8 @@ import {
   Await,
 } from 'react-router-dom';
 
-import EventItem from '../components/EventItem';
-import EventsList from '../components/EventsList';
+import EventItem from '../components/EventItem/EventItem';
+import EventsList from '../components/EventList/EventsList';
 import { getAuthToken } from '../util/auth';
 
 function EventDetailPage() {

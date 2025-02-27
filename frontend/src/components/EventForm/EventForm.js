@@ -7,7 +7,7 @@ import {
   redirect
 } from 'react-router-dom';
 
-import { getAuthToken } from '../util/auth';
+import { getAuthToken } from '../../util/auth';
 import classes from './EventForm.module.css';
 
 function EventForm({ method, event }) {
@@ -120,6 +120,6 @@ export async function action({ request, params }) {
     throw json({ message: 'Could not save event.' }, { status: 500 });
   }
 
-  return redirect('/events');
+  return redirect('/main/events');
 }
 

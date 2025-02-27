@@ -1,6 +1,6 @@
 import { json, redirect } from 'react-router-dom';
 
-import AuthForm from '../components/AuthForm';
+import AuthForm from '../components/AuthForm/AuthForm';
 
 function AuthenticationPage() {
   return <AuthForm />;
@@ -46,5 +46,5 @@ export async function action({ request }) {
   expiration.setHours(expiration.getHours() + 1);
   localStorage.setItem('expiration', expiration.toISOString());
 
-  return redirect('/');
+  return redirect('/main');
 }

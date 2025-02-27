@@ -4,8 +4,7 @@ export function getTokenDuration() {
   const storedExpirationDate = localStorage.getItem('expiration');
   const expirationDate = new Date(storedExpirationDate);
   const now = new Date();
-  const duration = expirationDate.getTime() - now.getTime();
-  return duration;
+  return expirationDate.getTime() - now.getTime();
 }
 
 export function getAuthToken() {
@@ -25,8 +24,7 @@ export function getAuthToken() {
 }
 
 export function tokenLoader() {
-  const token = getAuthToken();
-  return token;
+  return getAuthToken();
 }
 
 export function checkAuthLoader() {
@@ -35,4 +33,5 @@ export function checkAuthLoader() {
   if (!token) {
     return redirect('/auth');
   }
+  return null;
 }

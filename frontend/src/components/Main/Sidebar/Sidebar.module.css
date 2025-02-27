@@ -1,19 +1,25 @@
-.header {
-  max-width: 60rem;
-  margin: auto;
+
+.sidebar {
+  display: block;
+  width: 240px;
+  background: #2c333f;
+}
+
+.logo {
+  color: #fff;
   padding: 2rem;
-  display: flex;
-  justify-content: space-between;
 }
 
 .list {
   display: flex;
+  flex-direction: column;
   gap: 1rem;
 }
 
 .list a {
   text-decoration: none;
   color: var(--color-primary-400);
+  padding: 1rem;
 }
 
 .list a:hover,
