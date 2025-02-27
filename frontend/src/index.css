@@ -35,7 +35,9 @@
   --color-primary-600: #f9c762;
   --color-primary-700: #fbc14d;
   --color-primary-800: #fff;
-  --color-primary-900: #f6ad1b;
+  --color-btn-hover: #c70728;
+  --color-btn: #ef0d33;
+  --color-bg-grey: #e7e8ea;
 }
 
 body {

@@ -16,7 +16,7 @@ function NewsletterSignup() {
   return (
     <fetcher.Form
       method="post"
-      action="/newsletter"
+      action="/main/newsletter"
       className={classes.newsletter}
     >
       <input

@@ -21,15 +21,15 @@ function Sidebar() {
   ];
 
   return (
-    <sidebar className={classes.sidebar}>
+    <nav className={classes.sidebar}>
       <h2 className={classes.logo}>Company</h2>
-      <nav>
+
         <ul className={classes.list}>
           { links.map(link => (
-            <li>
+            <li key={ link.url }>
             <NavLink
               to={ link.url }
-              className={({ isActive }) => isActive && classes.active }
+              className={({ isActive }) => isActive ? classes.active : null }
               end={ link.end }
             >
               { link.name }
@@ -37,14 +37,12 @@ function Sidebar() {
           </li>
           )) }
         </ul>
-      </nav>
       {token && (
         <Form action="/logout" method="post">
           <button>Logout</button>
         </Form>
     )}
-      <NewsletterSignup />
-    </sidebar>
+    </nav>
   );
 }
 
